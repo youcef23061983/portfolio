@@ -155,6 +155,7 @@ const Homepage = () => {
           initial="hidden"
           whileInView="visible"
           className="homeImg"
+          viewport={{ once: true }}
         >
           <Image
             src="/photo3.png"
@@ -177,6 +178,7 @@ const Homepage = () => {
               key={index}
               custom={index}
               className="skill"
+              viewport={{ once: true }}
             >
               {skill}
             </motion.button>
@@ -195,6 +197,7 @@ const Homepage = () => {
               whileInView="visible"
               custom={index}
               className="project"
+              viewport={{ once: true }}
             >
               <Link href="https://linkedin.com" target="_blank">
                 <div className="projectImageContainer">
