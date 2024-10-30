@@ -118,7 +118,6 @@ const Homepage = () => {
         id="ss"
         style={{
           marginTop: `${navbarHeight}px`,
-          height: `calc(100vh - ${navbarHeight}px)`,
         }}
         className="homeDiv"
       >
