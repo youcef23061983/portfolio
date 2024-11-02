@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 import { FaGithubSquare, FaLinkedin } from "react-icons/fa";
-import { motion } from "framer-motion";
+import { delay, motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
 
 const Homepage = () => {
@@ -108,7 +108,7 @@ const Homepage = () => {
     hidden: { opacity: 0 },
     visible: (index) => ({
       opacity: 1,
-      transition: { delay: index * 0.2, ease: "easeInOut" },
+      transition: { delay: index * 0.5, ease: "easeInOut" },
     }),
   };
 
@@ -141,7 +141,7 @@ const Homepage = () => {
               <FaGithubSquare size={24} className="img" />
             </Link>
             <Link
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/in/youcefhank"
               target="_blank"
               className="iconImg"
             >
