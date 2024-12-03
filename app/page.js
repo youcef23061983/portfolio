@@ -31,7 +31,28 @@ const Homepage = () => {
     "Swiper",
   ];
 
-  const projects = ["/project1.png", "/project2.png", "/project3.png"];
+  const projects = [
+    {
+      name: "/project1.png",
+      index: "1",
+      url: "https://hotelmalaysia.vercel.app",
+    },
+    {
+      name: "/project2.png",
+      index: "2",
+      url: "https://clothing-ecommerce-phi.vercel.app",
+    },
+    {
+      name: "/project3.png",
+      index: "3",
+      url: "https://elbahjarestaurant.vercel.app",
+    },
+    {
+      name: "/project4.png",
+      index: "4",
+      url: "https://gymtoulouse.vercel.app",
+    },
+  ];
   const [user, setUser] = useState({ name: "", email: "", comment: "" });
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -157,7 +178,7 @@ const Homepage = () => {
           viewport={{ once: true }}
         >
           <Image
-            src="/photo3.png"
+            src="/photo.png"
             alt="Youcef Hank"
             width={300}
             height={300}
@@ -188,30 +209,30 @@ const Homepage = () => {
         <h1 className="skillsHeader">my projects</h1>
 
         <div className="projectsDiv">
-          {projects.map((project, index) => (
-            <motion.div
-              key={index}
-              variants={projectsVariants}
-              initial="hidden"
-              whileInView="visible"
-              custom={index}
-              className="project"
-              viewport={{ once: true }}
-            >
-              <Link href="https://linkedin.com" target="_blank">
-                <div className="projectImageContainer">
-                  <img
-                    src={project}
-                    className="img"
-                    alt={`Project ${index + 1}`}
-                  />
-                  <div className="projectOverlay">
-                    <button className="overlayText">Project {index + 1}</button>
+          {projects.map((project) => {
+            const { index, name, url } = project;
+
+            return (
+              <motion.div
+                key={index}
+                variants={projectsVariants}
+                initial="hidden"
+                whileInView="visible"
+                custom={index}
+                className="project"
+                viewport={{ once: true }}
+              >
+                <Link href={url} target="_blank">
+                  <div className="projectImageContainer">
+                    <img src={name} className="img" alt={`Project ${index}`} />
+                    <div className="projectOverlay">
+                      <button className="overlayText">Project {index}</button>
+                    </div>
                   </div>
-                </div>
-              </Link>
-            </motion.div>
-          ))}
+                </Link>
+              </motion.div>
+            );
+          })}
         </div>
       </div>
       <div id="nn" className="skillsDiv">
