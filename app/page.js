@@ -26,9 +26,13 @@ const Homepage = () => {
     "React",
     "React Query",
     "Nextjs",
+    "NextAuth.js",
     "Framer Motion",
-    "Firebase",
+    "Firebase Auth",
     "Swiper",
+    "Material UI",
+    "SEO",
+    "Vitest",
   ];
 
   const projects = [
@@ -51,6 +55,11 @@ const Homepage = () => {
       name: "/project4.png",
       index: "4",
       url: "https://gymtoulouse.vercel.app",
+    },
+    {
+      name: "/project5.png",
+      index: "5",
+      url: "https://petratravel.vercel.app",
     },
   ];
   const [user, setUser] = useState({ name: "", email: "", comment: "" });
