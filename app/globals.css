@@ -73,9 +73,10 @@ p {
   align-items: center;
   justify-content: center;
   text-align: center;
-  gap: 2rem;
+  gap: 1.5rem;
   padding: 1rem;
 }
+
 .iconImg {
   width: 3rem;
   height: 3rem;
@@ -92,8 +93,9 @@ p {
   display: flex;
   flex-direction: column;
   margin: 1rem;
-  padding: 4rem 1rem;
+  padding: 1rem 1rem;
   gap: 1.5rem;
+  height: 100vh;
 }
 .skillsHeader {
   text-align: center;
@@ -237,15 +239,24 @@ p {
     flex-direction: column-reverse;
     align-items: center;
     justify-content: center;
+    text-align: center;
     padding: 2rem 1rem;
+    font-size: medium;
     gap: 2rem;
+    height: 100vh;
+  }
+  .homeDesc > h3 {
+    font-size: 1.5rem;
+  }
+  .homeDesc > p {
+    font-size: 1.2rem;
   }
   .skillsHeader {
     font-size: 3rem;
   }
   .homeImg {
-    width: 25rem;
-    height: 25rem;
+    width: 20rem;
+    height: 20rem;
   }
 
   .input {
@@ -303,10 +314,22 @@ p {
   .homeDiv {
     display: flex;
     flex-direction: row;
+    align-items: center;
     justify-content: space-around;
   }
   .homeDesc {
     width: 50%;
+  }
+  .homeDesc > h3 {
+    font-size: 2.5rem;
+  }
+
+  .homeDesc > p {
+    font-size: 1.5rem;
+  }
+  .homeImg {
+    width: 25rem;
+    height: 25rem;
   }
   .input {
     font-weight: 100;
