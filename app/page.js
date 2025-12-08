@@ -131,7 +131,7 @@ const Homepage = () => {
     { icon: <FaCss3Alt size={24} />, name: "CSS3" },
     { icon: <TbBrandJavascript size={24} />, name: "JavaScript" },
     { icon: <SiTypescript size={24} />, name: "TypeScript" },
-    { icon: <SiReact size={24} />, name: "React 18" },
+    { icon: <SiReact size={24} />, name: "React 18, 19" },
     { icon: <SiReactrouter size={24} />, name: "React Router v7" },
     { icon: <SiNextdotjs size={24} />, name: "Next.js" },
     { icon: <SiTailwindcss size={24} />, name: "Tailwind CSS" },
